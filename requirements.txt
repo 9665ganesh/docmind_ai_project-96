@@ -1,31 +1,22 @@
-# DocMind AI - Render deployment
-# Use Python 3.12.x on Render (add .python-version with: 3.12.10)
 
 Flask
 gunicorn
 python-dotenv
 
-# LLM
 groq
+
 langchain
 langchain-core
 langchain-community
+langchain-text-splitters
+langchain-classic
+langchain-huggingface
+langchain-chroma
 langchain-groq
 
-# Vector database / retrieval
 chromadb
-langchain-chroma
+sentence-transformers
 rank-bm25
 
-# CPU-only PyTorch is installed separately in Render's Build Command.
-# Keep sentence-transformers for Hugging Face embedding support.
-sentence-transformers
-langchain-huggingface
-
-# PDF / document ingestion
-pymupdf
-pypdf
-unstructured
-
-# Add any other packages your app imports directly from the original
-# requirements.txt, such as OCR, table/image extraction, or reranking tools.
+pdfplumber
+PyMuPDF
